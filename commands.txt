@@ -1,0 +1,26 @@
+
+
+hjkl
+
+i Insert
+I Insert am Zeilenanfang
+a Append
+A Append am Zeilenende
+
+dw delete word
+dW delete until end of Line
+d0 Bis Zeilananfang löschen
+d$ Bis Zeilenende löschen oder D
+
+# Motions
+
+w -until the start of the next word
+e -until the end
+$ - end of line
+
+:w Write
+:q Quit
+:x WriteAndQuit
+:z
+
+
