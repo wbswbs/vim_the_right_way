@@ -1,5 +1,25 @@
 
 
+vimtutor
+
+Modus
+- Visual Mode
+- Insert Mode
+- Replace Modus
+- 
+
+
+Zahl auswählen
+Strg+A Zahl erhöhen
+Strg+x Zahl erniedrigen
+
+Aktuelles Verzeichnis einfügen
+:r !pwd
+
+Keine Schreibberechtigung
+:w !sudo tee %
+
+
 hjkl
 
 i Insert
@@ -7,10 +27,77 @@ I Insert am Zeilenanfang
 a Append
 A Append am Zeilenende
 
+R Replace mehrerer Zeichen
+
 dw delete word
 dW delete until end of Line
 d0 Bis Zeilananfang löschen
 d$ Bis Zeilenende löschen oder D
+
+p - put after Cursor
+P - put before Cursor
+
+Zeichen tauschen xp (Aktuelle Zeichen nach unten)
+Zeile tauschen ddp(Aktuelle Zeile nach unten)
+
+y -copy
+yy copy Zeile
+y$ copy to End of Line
+
+
+c - change
+cw -change Word
+ce -change to the End of the word
+
+u-undo
+U-Undo in der Zeile
+Strg+R Undo rückgängig machen
+
+g Anfang
+G Ende
+Strg +g Position merken
+
+ggdG Alles löschen
+:Linenumber
+
+Suche
+/Suchbegriff
+n -next
+
+Optionen
+
+:set (Optionen anzeigen)
+:set list (Tabs und Leerzeicheen anzeigen) 
+:set filetype=[phython]
+
+:colorscheme 
+
+% -find matching parantheses
+
+Ersetzen
+s/alt/neu/g Globally in the line
+:%s/alt/neu/gc Globally with prompt
+
+Bash
+:! Command
+
+~/.vimrc  Konfiguration
+
+:verbose option Zeige Definition
+
+:set option
+
+Autocompletion Strg+D + Tab
+
+v Visual Mode
+Shift v Visual Mode Zeilenweise
+Strg v Visual Mode Blockmodus
+
+I Insert Modus Zeicheneingabe Escape
+
+
+o open Command Neue Zeile in INsert Modus
+O Vor der aktuellen Zeile
 
 # Motions
 
@@ -22,5 +109,9 @@ $ - end of line
 :q Quit
 :x WriteAndQuit
 :z
+
+# Plugins
+Pathogen
+
 
 
